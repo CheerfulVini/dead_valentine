@@ -24,8 +24,8 @@ body{
 .col12{width: 100%}
 
 p{
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .links{
@@ -53,17 +53,52 @@ p{
     width: 100%;
 }
 
-#dead_valentine{
+#dead_valentine_g{
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    height: 500px;
+    height: 250px;
+    width: 100%;
 }
 
-img #dead_valentine{
+#dead_valentine_p{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 250px;
+    width: 100%;
+}
+
+img #dead_valentine_g{
     width: 100%;
     box-sizing: border-box;
     overflow: hidden;
+    object-fit: scale-down;
+}
+
+img #dead_valentine_p{
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    object-fit: scale-down;
+}
+
+@media screen and (max-width: 767px) {
+    #dead_valentine_g{
+        display: none;
+    }
+
+    .titulo{
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #dead_valentine_g{
+        display: none;
+    }
 }
